@@ -1,0 +1,23 @@
+[project]
+name = "real-madrid-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mustapha SAKKA", email = "sakka.mustaphaa@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.15.0",
+    "dotenv>=0.9.9",
+    "gradio>=6.30.0",
+    "pypdf>=6.21.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+real-madrid-chatbot = "real_madrid_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
